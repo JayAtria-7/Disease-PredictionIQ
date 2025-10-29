@@ -1,0 +1,8 @@
+# Render.com Deployment Configuration
+# This file is used by Render.com for automatic deployment
+
+# Build Command
+pip install -r requirements-deploy.txt
+
+# Start Command  
+gunicorn app:app --bind 0.0.0.0:$PORT
