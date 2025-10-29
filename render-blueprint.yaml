@@ -1,0 +1,18 @@
+# Render Blueprint for Flask Web Application
+# This file tells Render to deploy the Flask app (with UI) instead of the FastAPI
+
+services:
+  - type: web
+    name: disease-predictioniq
+    runtime: python
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements-deploy.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PYTHON_VERSION  
+        value: 3.10.0
+    healthCheckPath: /api/health
