@@ -1,8 +1,11 @@
-# Render.com Deployment Configuration
-# This file is used by Render.com for automatic deployment
-
-# Build Command
-pip install -r requirements-deploy.txt
-
-# Start Command  
-gunicorn app:app --bind 0.0.0.0:$PORT
+services:
+  - type: web
+    name: disease-predictioniq
+    runtime: python
+    buildCommand: pip install -r requirements-deploy.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PYTHON_VERSION
+        value: 3.10.0
