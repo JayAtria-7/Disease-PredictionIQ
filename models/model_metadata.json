@@ -1,0 +1,35 @@
+{
+    "model_name": "Neural Network (MLP)",
+    "model_type": "MLPClassifier",
+    "creation_date": "2025-10-29 10:10:04",
+    "total_models_evaluated": 8,
+    "feature_names": [
+        "age",
+        "sex",
+        "chest_pain_type",
+        "resting_blood_pressure",
+        "cholesterol",
+        "fasting_blood_sugar",
+        "resting_ecg",
+        "max_heart_rate",
+        "exercise_induced_angina",
+        "st_depression",
+        "st_slope",
+        "num_major_vessels",
+        "thalassemia"
+    ],
+    "n_features": 13,
+    "performance_metrics": {
+        "test_accuracy": 0.55,
+        "test_precision": 0.6666666666666666,
+        "test_recall": 0.36363636363636365,
+        "test_f1_score": 0.47058823529411764,
+        "test_roc_auc": 0.6073232323232324
+    },
+    "training_set_size": 320,
+    "test_set_size": 80,
+    "class_distribution": {
+        "class_0": 178,
+        "class_1": 222
+    }
+}

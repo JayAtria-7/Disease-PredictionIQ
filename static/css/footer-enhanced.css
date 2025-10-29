@@ -1,0 +1,180 @@
+/* ============================================
+   ENHANCED FOOTER STYLES
+   Disease PredictionIQ
+   Author: Jay Prakash
+   ============================================ */
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-developer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.developer-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.made-with {
+    color: var(--text-secondary);
+}
+
+.pulse-heart {
+    color: #ef4444;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    10%, 30% {
+        transform: scale(1.2);
+    }
+    20%, 40% {
+        transform: scale(1);
+    }
+}
+
+.project-name {
+    color: var(--text-primary);
+}
+
+.developer-name {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.developer-name strong {
+    color: var(--primary-light);
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover {
+    transform: translateY(-3px) scale(1.1);
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+    border-color: var(--primary-color);
+}
+
+.social-link:nth-child(1):hover {
+    background: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.social-link:nth-child(2):hover {
+    background: #0077b5;
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.4);
+}
+
+.social-link:nth-child(3):hover {
+    background: #FFA116;
+    box-shadow: 0 5px 15px rgba(255, 161, 22, 0.4);
+}
+
+.social-link:nth-child(4):hover {
+    background: #ea4335;
+    box-shadow: 0 5px 15px rgba(234, 67, 53, 0.4);
+}
+
+.social-link i {
+    font-size: 1.1rem;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-bottom {
+        gap: 1.25rem;
+    }
+    
+    .developer-info {
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+    
+    .developer-name {
+        font-size: 0.9rem;
+    }
+    
+    .footer-social {
+        gap: 0.5rem;
+    }
+    
+    .social-link {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .social-link i {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-bottom {
+        padding-top: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .developer-info {
+        font-size: 0.8rem;
+    }
+    
+    .developer-name {
+        font-size: 0.85rem;
+    }
+    
+    .footer-social {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
