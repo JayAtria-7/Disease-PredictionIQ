@@ -41,9 +41,9 @@ env/
 .DS_Store
 Thumbs.db
 
-# Project specific
-models/*.pkl
-models/*.joblib
+# Project specific - REMOVED to allow model files in Git
+# models/*.pkl
+# models/*.joblib
 *.log
 
 # Temporary files
