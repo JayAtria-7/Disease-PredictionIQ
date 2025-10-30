@@ -1,7 +1,7 @@
 """
 Vercel Serverless Function Handler for Disease PredictionIQ
 This file adapts the Flask app for Vercel's serverless environment
-Author: Jay Prakash
+Author: Jay Prakash kumar
 """
 
 from app import app

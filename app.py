@@ -1,7 +1,7 @@
 """
 Disease PredictionIQ Web Application
 Flask backend with REST API endpoints
-Author: Jay Prakash
+Author: Jay Prakash kumar
 """
 
 from flask import Flask, render_template, request, jsonify
